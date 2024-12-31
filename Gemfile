@@ -49,6 +49,13 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  # Reporter for MiniTest
+  gem "minitest-reporters", "~> 1.1", ">= 1.1.11"
+
+  # To automatically start test runs when files are modified
+  gem "guard"
+  gem "guard-minitest", "~> 2.4", ">= 2.4.6"
 end
 
 group :development do

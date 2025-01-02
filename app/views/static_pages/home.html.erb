@@ -1,5 +1,16 @@
 <%provide(:title, "Home")%>
+<div class="center jumbotron">
+  <h1>Welcome to the Sample App</h1>
+  <h2>
+    <p>This will lead you to 
+    <a href="https://rubyonrails.org/" target="_blank">Home Page
+    </a> of Ruby on Rails Website
+  </p>
+  </h2>
+  
+  <%= link_to 'Sign up now!',"#", class:"btn btn-lg btn-primary" %>
+</div>
 
-<h1>Home Page</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
-<p>This will lead you to <a href="https://rubyonrails.org/" target="_blank">Home Page</a> of Ruby on Rails Website</p>
+
+<%= link_to image_tag("rails.png",alt: "rails logo"), 'https://rubyonrails.org/' %>
+
